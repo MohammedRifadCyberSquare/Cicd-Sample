@@ -3,11 +3,11 @@ const express = require("express");
 const app = express();
 
 app.get('/', (req, res) => {
-    return res.sendStatus(200).json({ message: "Hello world" });
+    return res.status(200).json({ message: "Hello world" });
 })
 
 app.get('/home', (req, res) => {
-    return res.sendStatus(200).json({ message: "Hello Welcome" });
+    return res.status(200).json({ message: "Hello Welcome" });
 })
 
 app.listen(6000, (error) => {
