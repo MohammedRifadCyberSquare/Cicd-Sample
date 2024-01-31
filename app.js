@@ -7,7 +7,7 @@ app.get('/',(req,res)=> {
 })
 
 app.get('/home',(req,res)=> {
-    return res.sendStatus(200).json({message:"Hello all"});
+    return res.sendStatus(200).json({message:"Hello Welcome"});
 })
 
 app.listen(6000);
