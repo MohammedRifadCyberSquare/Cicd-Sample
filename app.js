@@ -10,4 +10,6 @@ app.get('/home',(req,res)=> {
     return res.sendStatus(200).json({message:"Hello Welcome"});
 })
 
-app.listen(6000);
+app.listen(6000, ()=>{
+console.log('server is running')
+});
