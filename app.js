@@ -2,14 +2,19 @@ const express = require("express");
 
 const app = express();
 
-app.get('/',(req,res)=> {
-    return res.sendStatus(200).json({message:"Hello world"});
+app.get('/', (req, res) => {
+    return res.sendStatus(200).json({ message: "Hello world" });
 })
 
-app.get('/home',(req,res)=> {
-    return res.sendStatus(200).json({message:"Hello Welcome"});
+app.get('/home', (req, res) => {
+    return res.sendStatus(200).json({ message: "Hello Welcome" });
 })
 
-app.listen(6000, ()=>{
-console.log('server is running')
+app.listen(6000, (error) => {
+    if (error) {
+        console.log(error)
+    }
+    else{
+        console.log('server is running')
+    }
 });
